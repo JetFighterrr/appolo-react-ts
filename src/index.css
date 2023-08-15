@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  background-color: azure;
+  max-height: 400px;
+  width: 100%;
+  padding: 24px 16px;
+}
+
+.selectors {
+  display: flex;
+  justify-content: center;
+  vertical-align: center;
+}
+
+selector, button{
+/*display: block;*/
+  height: 50px;
+  width: 80px;
+  /*background-color: #eaeaea;*/
+  /*border-radius: 4px;*/
+  /*border: solid 1px;*/
+  /*border-bottom: #f26100 solid 1px;*/
+  /*padding-left: 16px;*/
+  /*font-size: 18px;*/
+  /*margin-left: 24px;*/
+  margin-left: 24px;
+}
+
+.selector {
+   width: 80px;
+   min-height: 50px;
+ }
+
+select#Width, select#Height, select[id^="Young"] {
+  display: inline-block;
+
+  height: 30px;
+  background-color: #eaeaea;
+  border-radius: 4px;
+  border: solid 1px;
+  border-bottom: #f26100 solid 1px;
+  padding-left: 16px;
+  font-size: 18px;
+  margin-top: 3px;
+}
+
+select#Width, select#Height {
+  width: 90px;
+}
+
+select[id^="Young"] {
+  width: 120px;
+}
+
+button.get-data {
+  width: 150px;
+  border-radius: 4px;
+  min-height: 54px;
+  border: solid 1px;
+  border-bottom: #f26100 solid 1px;
+  padding-left: 16px;
+  font-size: 16px;
+}
+
+.selector-container + .selector-container, .selector-container + .get-data{
+  margin-left: 24px;
+}
+
+.picture {
+  display: flex;
+  justify-content: center;
+  vertical-align: top;
+}
+
+img.picture {
+  min-height: 300px;
+  min-width: 300px;
+  max-height: 700px;
+  max-width: 300px;
+}
